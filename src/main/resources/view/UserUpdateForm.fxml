@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserUpdateFormController">
+   <children>
+      <Pane layoutX="19.0" layoutY="38.0" prefHeight="360.0" prefWidth="650.0" style="-fx-border-color: #D94865; -fx-border-radius: 30px;">
+         <children>
+            <Label layoutX="28.0" layoutY="34.0" text="ACCOUNT MANAGEMENT">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="88.0" text="ID  :  " textFill="#001eff">
+               <font>
+                  <Font name="Microsoft Sans Serif" size="22.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbUserIds" layoutX="113.0" layoutY="87.0" onAction="#cmbUserIdsOnAction" prefHeight="27.0" prefWidth="99.0" promptText="Ids" styleClass="combobox" />
+            <TextField fx:id="txtUserName" layoutX="339.0" layoutY="142.0" prefHeight="26.0" prefWidth="250.0" promptText="User Name" />
+            <TextField fx:id="txtName" layoutX="48.0" layoutY="142.0" prefHeight="26.0" prefWidth="250.0" promptText="Name" />
+            <TextField fx:id="txtEmail" layoutX="48.0" layoutY="185.0" prefHeight="26.0" prefWidth="250.0" promptText="E-mail" />
+            <TextField fx:id="txtPhoneNo" layoutX="48.0" layoutY="231.0" prefHeight="26.0" prefWidth="250.0" promptText="Mobile No" />
+            <JFXButton buttonType="RAISED" layoutX="48.0" layoutY="294.0" onAction="#changeAccountOnAction" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #059AFC; -fx-background-radius: 10px;" text="Change Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="339.0" layoutY="294.0" onAction="#deleteAccountOnAction" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: #D94865; -fx-background-radius: 10px;" text="Delete Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXButton layoutX="652.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="27.0" style="-fx-border-radius: 25px; -fx-background-radius: 25px;" text=" ">
+         <graphic>
+            <ImageView fx:id="wrongID" fitHeight="21.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/unnamed.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

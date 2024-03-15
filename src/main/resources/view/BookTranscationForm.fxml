@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookTranscationFormController">
+   <children>
+      <TableView fx:id="tblTransaction" layoutX="74.0" layoutY="86.0" prefHeight="383.0" prefWidth="767.0">
+         <columns>
+            <TableColumn fx:id="ColBookId" prefWidth="136.3333282470703" text="Book-Id" />
+            <TableColumn fx:id="ColTitle" minWidth="0.0" prefWidth="141.6666717529297" text="Title" />
+            <TableColumn fx:id="ColGenre" prefWidth="157.3333740234375" text="Genre" />
+            <TableColumn fx:id="ColBarrowDate" prefWidth="170.66668701171875" text="Barrow_Date" />
+            <TableColumn fx:id="ColReturnDate" prefWidth="159.33331298828125" text="Return_Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="313.0" layoutY="25.0" text="TRANSACTION DETAILS" textFill="#344e41">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

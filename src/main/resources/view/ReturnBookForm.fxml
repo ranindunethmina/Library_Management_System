@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ReturnBookFormController">
+   <children>
+      <Label fx:id="lblBookId" layoutX="243.0" layoutY="78.0" prefHeight="30.0" prefWidth="137.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView layoutX="74.0" layoutY="193.0" prefHeight="291.0" prefWidth="767.0">
+         <columns>
+            <TableColumn fx:id="ColBookId" prefWidth="122.66667175292969" text="Book-Id" />
+            <TableColumn fx:id="ColTitle" minWidth="0.0" prefWidth="154.33334350585938" text="Title" />
+            <TableColumn fx:id="ColGenre" prefWidth="157.3333740234375" text="Genre" />
+            <TableColumn fx:id="ColBarrowDate" prefWidth="170.66668701171875" text="Barrow_Date" />
+            <TableColumn fx:id="ColReturnDate" prefWidth="159.33331298828125" text="Return_Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="384.0" layoutY="17.0" text="RETURN BOOKS">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="108.0" layoutY="83.0" text="Select Book_ID  :  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTitle" layoutX="243.0" layoutY="126.0" prefHeight="30.0" prefWidth="137.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="131.0" text="Book Title          :  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblReturnDate" layoutX="542.0" layoutY="84.0" prefHeight="30.0" prefWidth="137.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="397.0" layoutY="89.0" text="Return Due Date   :  ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnReturn" layoutX="706.0" layoutY="138.0" onAction="#btnReturnOnAction" prefHeight="42.0" prefWidth="128.0" style="-fx-border-color: Navy blue; -fx-border-radius: 15px;" text="Return Book">
+         <font>
+            <Font name="Microsoft Sans Serif" size="13.0" />
+         </font></JFXButton>
+   </children>
+</AnchorPane>

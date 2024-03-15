@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BarrowBookFormController">
+   <children>
+      <Label fx:id="lblBookId" layoutX="197.0" layoutY="62.0" prefHeight="30.0" prefWidth="137.0" text="id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookTitle" layoutX="391.0" layoutY="117.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="193.0" promptText="Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="tblBarrowBook" layoutX="46.0" layoutY="251.0" prefHeight="233.0" prefWidth="827.0">
+         <columns>
+            <TableColumn fx:id="ColBookId" prefWidth="94.33333587646484" text="Book-Id" />
+            <TableColumn fx:id="ColTitle" minWidth="0.0" prefWidth="130.66666412353516" text="Title" />
+            <TableColumn fx:id="ColGenre" prefWidth="158.33331298828125" text="Genre" />
+            <TableColumn fx:id="ColAuthor" prefWidth="160.0" text="Author" />
+            <TableColumn fx:id="ColBarrowDate" prefWidth="144.0" text="Barrow_Date" />
+            <TableColumn fx:id="ColReturnDate" prefWidth="138.66668701171875" text="Return_due_Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="383.0" layoutY="10.0" text="BARROW BOOKS">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="72.0" layoutY="67.0" text="Select Book_ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="391.0" layoutY="87.0" text="Search Book  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="176.0" text="Author  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="694.0" layoutY="87.0" text="Genre  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbChooseBranch" layoutX="73.0" layoutY="116.0" onAction="#cmbChooseBranchOnAction" prefHeight="30.0" prefWidth="171.0" promptText="Select Branch" />
+      <Label layoutX="392.0" layoutY="174.0" text="Availability  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailability" layoutX="392.0" layoutY="206.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblGenre" layoutX="694.0" layoutY="118.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAuthor" layoutX="73.0" layoutY="209.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBarrow" layoutX="738.0" layoutY="189.0" onAction="#btnBarrowOnAction" prefHeight="42.0" prefWidth="128.0" style="-fx-border-color: black; -fx-border-radius: 15px;" text="Barrow">
+         <font>
+            <Font name="Microsoft Sans Serif" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

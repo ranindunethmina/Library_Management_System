@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(to right, #9EFFF7, #2270A1);" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+    <children>
+        <Label fx:id="lblDateAndTime" layoutX="22.0" layoutY="537.0" prefHeight="60.0" prefWidth="353.0" textAlignment="CENTER" textFill="#0056b3">
+            <font>
+                <Font name="Comic Sans MS Italic" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="846.0" layoutY="617.0" text="© 2024- Version 1.0.0.0">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font></Label>
+      <AnchorPane layoutX="542.0" layoutY="79.0" prefHeight="482.0" prefWidth="400.0" style="-fx-background-color: #c9c7ed; -fx-background-radius: 15px;">
+         <children>
+              <ImageView fitHeight="94.0" fitWidth="131.0" layoutX="22.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../assets/icon_login.png" />
+                  </image>
+              </ImageView>
+              <Label layoutX="79.0" layoutY="119.0" text="Hi," textOverrun="WORD_ELLIPSIS">
+                  <font>
+                      <Font name="System Bold Italic" size="18.0" />
+                  </font>
+              </Label>
+              <Label layoutX="130.0" layoutY="148.0" text="Log in to your Account ! " textOverrun="WORD_ELLIPSIS">
+                  <font>
+                      <Font name="System Bold Italic" size="18.0" />
+                  </font>
+              </Label>
+              <TextField fx:id="txtUserName" layoutX="66.0" layoutY="215.0" onAction="#txtUserNameOnAction" prefHeight="40.0" prefWidth="310.0" promptText="User Name" style="-fx-border-color: blue; -fx-border-width: 0 0 2 2; -fx-background-color: white; -fx-border-radius: 5px;">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </TextField>
+              <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="27.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../assets/icon_user.png" />
+                  </image>
+              </ImageView>
+              <PasswordField fx:id="txtpassword" layoutX="66.0" layoutY="281.0" onAction="#txtPasswordOnAction" onKeyTyped="#PwFieldKeyTyped" prefHeight="40.0" prefWidth="310.0" promptText="Password" style="-fx-border-color: blue; -fx-border-width: 0 0 2 2; -fx-background-color: white; -fx-background-radius: 5px;">
+                  <font>
+                      <Font size="16.0" />
+                  </font>
+              </PasswordField>
+              <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="27.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                      <Image url="@../assets/icon_password.png" />
+                  </image>
+              </ImageView>
+              <ToggleButton fx:id="btnToogle" layoutX="336.0" layoutY="281.0" mnemonicParsing="false" onAction="#btnToogleOnAction" prefHeight="38.0" prefWidth="40.0">
+                  <graphic>
+                      <ImageView fx:id="imgEye" fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@../assets/icon-eye-close.png" />
+                          </image>
+                      </ImageView>
+                  </graphic>
+            </ToggleButton>
+              <Label fx:id="lblShownPw" layoutX="72.0" layoutY="322.0" prefHeight="20.0" prefWidth="297.0">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+            </Label>
+              <Button id="blue" fx:id="btnLogin" layoutX="118.0" layoutY="359.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="35.0" prefWidth="190.0" style="-fx-background-color: #5983Fc; -fx-background-radius: 19;" text="Log In" textFill="WHITE">
+                  <cursor>
+                      <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <font>
+                      <Font name="System Bold" size="16.0" />
+                  </font>
+              </Button>
+            <Line endX="231.66668701171875" layoutX="147.0" layoutY="413.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="0.5457412888198997" endY="1.0" startX="0.3249211115791971">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3151397109031677" green="0.1862681359052658" blue="0.7017543911933899" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.5130875110626221" green="0.45478665828704834" blue="0.6491228342056274" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke></Line>
+            <Label layoutX="109.0" layoutY="423.0" text="You have account ?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="btnSign" layoutX="238.0" layoutY="421.0" onAction="#btnSignOnAction" text="Sign In" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="123.0" fitWidth="155.0" layoutX="25.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/bookworm-logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="380.0" fitWidth="391.0" layoutX="71.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/login1.jpeg" />
+         </image>
+         <rotationAxis>
+            <Point3D x="1.0" y="1.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+    </children>
+</AnchorPane>

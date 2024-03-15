@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserManageFormController">
+   <children>
+      <TableView fx:id="tblUser" layoutX="35.0" layoutY="105.0" opacity="0.83" prefHeight="329.0" prefWidth="820.0">
+         <columns>
+            <TableColumn fx:id="colUserNo" prefWidth="88.0" text="User No" />
+            <TableColumn fx:id="colName" minWidth="0.0" prefWidth="180.0" text="Name" />
+            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="200.0" text="E-mail" />
+            <TableColumn fx:id="colMobileNo" minWidth="0.0" prefWidth="150.0" text="Mobile No" />
+            <TableColumn fx:id="colUpdate" prefWidth="100.0" text="Action1" />
+            <TableColumn fx:id="colDelete" prefWidth="100.0" text="Action2" />
+         </columns>
+      </TableView>
+      <Label layoutX="363.0" layoutY="19.0" text="USER MANAGEMENT" textFill="#344e41">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+   </children>
+</AnchorPane>

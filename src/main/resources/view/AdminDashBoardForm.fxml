@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="1163.0" style="-fx-background-color: #3db6e2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminDashBoardFormController">
+    <children>
+        <JFXButton fx:id="btnHome" layoutX="27.0" layoutY="84.0" minHeight="-Infinity" onAction="#btnHomeOnAction" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #65ECE5; -fx-background-radius: 7; -fx-border-color: white; -fx-border-radius: 7;" text="Dash Board" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Microsoft Sans Serif" size="16.0" />
+            </font>
+        </JFXButton>
+        <ImageView fx:id="imgHome" fitHeight="30.0" fitWidth="30.0" layoutX="39.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/icon_home.png" />
+            </image>
+        </ImageView>
+        <JFXButton fx:id="btnBook" layoutX="26.0" layoutY="153.0" minHeight="-Infinity" onAction="#btnBookOnAction" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #65ECE5; -fx-background-radius: 7; -fx-border-color: white; -fx-border-radius: 7;" text="Books Manage" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Microsoft Sans Serif" size="16.0" />
+            </font>
+        </JFXButton>
+        <ImageView fx:id="imgBook" fitHeight="30.0" fitWidth="30.0" layoutX="38.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon-books.png" />
+         </image></ImageView>
+        <JFXButton fx:id="btnUser" layoutX="26.0" layoutY="223.0" minHeight="-Infinity" onAction="#btnUserOnAction" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #65ECE5; -fx-background-radius: 7; -fx-border-color: white; -fx-border-radius: 7;" text="User Manage" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Microsoft Sans Serif" size="16.0" />
+            </font>
+        </JFXButton>
+        <ImageView fx:id="imgUser" fitHeight="30.0" fitWidth="30.0" layoutX="36.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon-user-settings.png" />
+         </image></ImageView>
+        <JFXButton fx:id="btnBranch" layoutX="26.0" layoutY="294.0" minHeight="-Infinity" onAction="#btnBranchOnAction" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #65ECE5; -fx-background-radius: 7; -fx-border-color: white; -fx-border-radius: 7;" text="Branch Manage" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Microsoft Sans Serif" size="16.0" />
+            </font>
+        </JFXButton>
+        <ImageView fx:id="imgBranch" fitHeight="30.0" fitWidth="30.0" layoutX="32.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icon-branch.png" />
+         </image></ImageView>
+        <JFXButton fx:id="btnLogOut" layoutX="24.0" layoutY="521.0" minHeight="-Infinity" onAction="#btnLogOutOnAction" prefHeight="45.0" prefWidth="190.0" style="-fx-background-color: #65ECE5; -fx-background-radius: 7; -fx-border-color: white; -fx-border-radius: 7;" text="Logout" textAlignment="JUSTIFY">
+            <font>
+                <Font name="Microsoft Sans Serif" size="16.0" />
+            </font>
+        </JFXButton>
+        <AnchorPane fx:id="childPane" layoutX="238.0" layoutY="73.0" prefHeight="494.0" prefWidth="900.0" style="-fx-background-radius: 10; -fx-border-color: white; -fx-border-radius: 10;" />
+      <Separator layoutX="23.0" layoutY="66.0" prefHeight="3.0" prefWidth="1120.0" />
+      <Label layoutX="25.0" layoutY="9.0" prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #2200ff;" text="Library Management System">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+        <ImageView fx:id="imgLogOut" fitHeight="25.0" fitWidth="25.0" layoutX="36.0" layoutY="533.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/icon_logout.png" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2741ff" height="42.0" layoutX="1011.0" layoutY="15.0" opacity="0.69" strokeType="INSIDE" style="-fx-arc-height: 22; -fx-arc-width: 22;" width="125.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2741ff" height="42.0" layoutX="877.0" layoutY="15.0" opacity="0.69" strokeType="INSIDE" style="-fx-arc-height: 22; -fx-arc-width: 22;" width="125.0" />
+      <Label fx:id="lblTime" layoutX="1031.0" layoutY="23.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="892.0" layoutY="23.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

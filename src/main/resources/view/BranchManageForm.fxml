@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="494.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BranchManageFormController">
+   <children>
+      <TableView fx:id="tblBranch" layoutX="83.0" layoutY="221.0" opacity="0.71" prefHeight="200.0" prefWidth="651.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="90.0" text="Branch_ID" />
+            <TableColumn fx:id="colName" prefWidth="180.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="150.0" text="Contact" />
+            <TableColumn fx:id="colLocation" prefWidth="229.33340454101562" text="Location" />
+         </columns>
+      </TableView>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="679.0" layoutY="33.0" onMouseClicked="#btnAddNewBranchAction" prefHeight="44.0" prefWidth="173.0" style="-fx-background-color: #2980b9;" text="Add New Branch" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="634.0" layoutY="433.0" onAction="#btnUpdateOnAction" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #e67e22;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/update.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" contentDisplay="RIGHT" layoutX="755.0" layoutY="433.0" onAction="#btnDeleteOnAction" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/delete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <TextField fx:id="txtBranchLoacation" layoutX="188.0" layoutY="168.0" prefHeight="31.0" prefWidth="228.0" promptText="Location">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtBranchName" layoutX="188.0" layoutY="111.0" prefHeight="31.0" prefWidth="228.0" promptText="Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="353.0" layoutY="6.0" text="BRANCH MANAGEMENT" textFill="#344e41">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="107.0" layoutY="116.0" text="Name     :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="173.0" text="Locaion  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBranchContact" layoutX="518.0" layoutY="129.0" prefHeight="31.0" prefWidth="228.0" promptText="Contact">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="445.0" layoutY="135.0" text="Contact  :  ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" contentDisplay="RIGHT" layoutX="516.0" layoutY="434.0" onAction="#btnSaveOnAction" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: green;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/save.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <Label fx:id="lblBranchId" layoutX="256.0" layoutY="62.0" prefHeight="30.0" prefWidth="137.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="68.0" text="Available Branch_ID :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
